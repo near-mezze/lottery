@@ -56,18 +56,6 @@ src
 └── utils.ts                      <-- shared contract code
 ```
 
-
-### Simulation Tests
-
-```txt
-simulation                        <-- simulation tests
-├── Cargo.toml
-├── README.md
-└── src
-    ├── lib.rs
-    └── lottery.rs
-```
-
 ### Helper Scripts
 
 ```txt
