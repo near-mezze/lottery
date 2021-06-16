@@ -121,7 +121,8 @@ export class Contract {
 
   @mutateState()
   reset(): void {
-    this.assert_self();
+    // removing self assert for demo purposes
+    // this.assert_self();
     this.players.clear();
     this.winner = "";
     this.last_played = "";
@@ -132,10 +133,11 @@ export class Contract {
   // this method is only here for the promise callback,
   // it should never be called directly
   @mutateState()
-  on_payout_complete(): void {
+  on_payout_complete(): string {
     this.assert_self();
     this.active = false;
     logging.log("game over.");
+    return 'Drawing is over'
   }
 
   // --------------------------------------------------------------------------
@@ -154,8 +156,9 @@ export class Contract {
     return this.lottery.play()
   }
 
-  private lose(): void {
+  private lose(): string {
     logging.log(this.last_played + " did not win.  The pot is currently " + this.get_pot());
+    return this.last_played + " did not win.  The pot is currently " + this.get_pot()
   }
 
   private payout(): void {
@@ -181,7 +184,8 @@ export class Contract {
 
   private assert_self(): void {
     const caller = Context.predecessor
+    const owner = this.get_owner()
     const self = Context.contractName
-    assert(caller == self, "Only this contract may call itself");
+    assert((caller == self || caller == owner), "Only this contract or its owner may call this method");
   }
 }
