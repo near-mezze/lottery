@@ -36,7 +36,7 @@ The goal of this repository is to make it as easy as possible to get started wri
 
 ## The file system
 
-Please note that boilerplate project configuration files have been ommitted from the following lists for simplicity.
+Please note that boilerplate project configuration files have been omitted from the following lists for simplicity.
 
 ### Contracts and Unit Tests
 

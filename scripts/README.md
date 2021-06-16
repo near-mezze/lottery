@@ -1,7 +1,7 @@
 ## Setting up your terminal
 
 The scripts in this folder support a simple demonstration of the contract.
-Although this contract supports an unlimited number of player, this demostration uses only 2 players.
+Although this contract supports an unlimited number of player, this demonstration uses only 2 players.
 
 It uses the following setup:
 

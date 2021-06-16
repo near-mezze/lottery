@@ -111,6 +111,7 @@ export class Contract {
     return true;
   }
 
+  // StrategyType is 0,1,2,or 3, and mapped to Free, Constant, Linear, and Exponential respectively
   @mutateState()
   configure_fee(strategy: StrategyType): bool {
     this.assert_self();
