@@ -1,6 +1,7 @@
 ---
 title: Lottery
 slug: lottery
+section: Contracts
 ---
 
 <blockquote class="lesson mt-6">
