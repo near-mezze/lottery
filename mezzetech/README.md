@@ -49,12 +49,7 @@ You can find more examples of Smart Contracts with UIs at [examples.near.org](ht
 ## Local Setup
 
 
-The repo for this project comes with several branches, so be sure you fetch them all. The first branch, `getting-started`, is the bare bones project. It will have all of the files we need to start, but most of them will be empty. The other branches you will find along with `getting-started` are:
-
-1. `getting-started`
-2. `functions/empty` & `functions/solution`
-3. `tests/unit/empty` & `tests/unit/solution`
-4. `scripts/empty` & `scripts/solution`
+The repo for this project comes with several branches, but we will only be adding code to the `getting-started` branch. The complete code is in the `main` branch, so feel free to take a peak when you feel lost.
 
 <br/>
 
@@ -714,7 +709,7 @@ There is a lot we can do from the terminal. We can play, reset, play again, and 
 
 However we can be waaayyyy more efficient if we take all our imagined scenarios, and wrap them in Unit Tests. 
 
-Switch to the `tests/unit/solution` branch of your repo. You should see all of the files in `_lottery/__tests__/` populated. Take a few moments to review the code.
+You should see all of the files in `lottery/__tests__/` populated. Take a few moments to review the code.
 
 Seems pretty similar to the files in the `assembly/` directory. We have files for each main class we use.
 
@@ -851,7 +846,7 @@ When you're ready to switch over from a dev contract account to a permanent one 
 
 We can automate our Smart Contract even more with some scripts. So, instead of running each _call_ or _view_ method from the terminal, we can place all of our executables in their own script files with as much commentary as we need. 
 
-Switch to the  `scripts/solution` branch. If you completed the _Thanks_ tutorial (which you should have at this point) then you'll recall a neat demonstration using the terminal to call and "watch" how a Smart Contract executes. Let's jump into that now.
+If you completed the _Thanks_ tutorial (which you should have at this point) then you'll recall a neat demonstration using the terminal to call and "watch" how a Smart Contract executes. Let's jump into that now.
 
 You will be monitoring your _testnet_ accounts used in this project by cloning this project:
 
